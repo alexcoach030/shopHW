@@ -81,9 +81,10 @@ body {
   background-color: rgba(25, 23, 23, 0.7);
   visibility: hidden;
 }
-
+/* Ховер для менюшки вверху - восстановить позже
 .header-menu-dropdown:hover~.dropdown-content{visibility: visible}
 .header-menu-dropdown:hover~.dropdown-background{visibility: visible}
+*/
 
 .dropdown-content-tag{
   display: flex;
@@ -130,23 +131,18 @@ body {
 
 
 .promo {
-  max-width: 1600px;
-  height: 764px;
+  height: 767px;
   margin: 0 auto;
+  background: linear-gradient(to right, #F4F3F3, #F1E4E6);
+}
+
+.promo-wrap{
   display: flex;
-  background-color: #F1E4E6;
 }
 
 .promo-img{
-  min-width: 800px;
-  background-color: #F4F3F3;
+  margin-left: -225px;
 }
-
-.promo-text{
-  min-width: 800px;
-  background-color: #F4F3F3;
-}
-
 
 .promo-text-details{
   margin: 326px 40px;
@@ -429,8 +425,10 @@ body {
 
 .feedback{
   background-image: url("../img/feedbackimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin: 0 auto;
-  max-width: 1600px;
   height: 448px;
 }
 
