@@ -672,6 +672,10 @@ body {
   margin-bottom: 30px;
 }
 
+.catalog-product a{
+  text-decoration: none;
+}
+
 .catalog-product-name{
   font-style: normal;
   font-weight: normal;
@@ -846,6 +850,10 @@ summary::-webkit-details-marker {
   border-bottom: 1px solid #EBEBEB;
   margin-top: 30px;
   padding-left: 11px;
+}
+
+.filter-items:hover{
+  color: #EF5B70!important;
 }
 
 .filter-text svg{
