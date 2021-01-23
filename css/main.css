@@ -560,10 +560,16 @@ body {
   text-align: center;
   line-height: 34px;
   background-color: #FFFFFF;
+  color: black;
+}
+
+.social svg{
+  fill: currentColor;
 }
 
 .socials a:hover{
   background-color: #F16D7F;
+  color: #FFFFFF;
 }
 
 .header-search:hover, .header-menu:hover, .header-acc:hover, .header-basket:hover{
@@ -617,10 +623,12 @@ body {
 
 .catalog-filter-wrap{
   display: flex;
+  position: relative;
 }
 
 .catalog-filter-tag{
-  flex-basis: 40%;
+  flex-basis: 32%;
+  margin-top: 14px;
 }
 
 .filter-text{
@@ -629,10 +637,13 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
+  overflow: hidden;
+  outline: none;
 }
 
-.filter-text img{
-  margin: 0 30px 2px 10px;
+
+.catalog-filter-trend{
+  margin-left: 25px;
 }
 
 .catalog-filter-tag p{
@@ -711,6 +722,147 @@ body {
   line-height: 45px;
   color: #CFCFCF;
 }
+
+.catalog-pagination-btn{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.catalog-pagination-btn svg{
+  fill: black;
+}
+
+.catalog-pagination-btn svg:hover{
+  fill: #EF5B70;
+}
+
+.catalog-pagination a:hover{
+  color: #EF5B70;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+.filter-categories{
+  position: absolute;
+  margin-top: -30px;
+  height: inherit;
+  width: 360px;
+  background-color: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding-left: 15px;
+}
+
+.filter-categories-text{
+  color: #EF5B70!important;
+}
+
+.catalog-filter-size{
+  position: relative;
+}
+
+.catalog-filter-checkbox{
+  position: absolute;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  background: #FFFFFF;
+  width: 100%;
+}
+
+.catalog-filter-checkbox form {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-filter-checkbox form:first-child{
+  margin-top: 10px;
+}
+
+.catalog-checkbox summary{
+  margin-top: 14px;
+}
+.checkbox-form-block{
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+}
+
+.filter-details summary{
+  color: #000000;
+}
+
+.filter-details summary:focus{
+  color: #EF5B70;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.filter-categories-summary{
+  line-height: 37px;
+  color: #6F6E6E!important;
+}
+
+.filter-categories-summary:hover{
+  color: #EF5B70!important;
+}
+
+.filter-categories-summary:focus{
+  color: #EF5B70!important;
+}
+
+.filter-categories-summary:last-child{
+  margin-bottom: 16px;
+}
+
+.filter-items{
+  color: #6F6E6E!important;
+  margin-left: 15px;
+  font-weight: normal!important;
+}
+
+.filter-categories details a{
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E!important;
+
+}
+
+.filter-details summary:hover{
+  color: #EF5B70;
+  cursor: pointer;
+}
+
+.filter-categories summary{
+  border-left: 5px solid #EF5B70;
+  border-bottom: 1px solid #EBEBEB;
+  margin-top: 30px;
+  padding-left: 11px;
+}
+
+.filter-text svg{
+  fill: currentColor;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.filter-text:hover{
+  color: #EF5B70;
+}
+
+.filter-text{
+  cursor: pointer;
+}
+
+
 
 
 
