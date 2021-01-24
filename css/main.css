@@ -18,6 +18,7 @@ body {
 
 .main{
   height: 2272px;
+  margin-bottom: 128px;
 }
 
 .header-logo{
@@ -869,6 +870,152 @@ summary::-webkit-details-marker {
 .filter-text{
   cursor: pointer;
 }
+
+.product-slider{
+  background-color: #F7F7F7;
+  display: flex;
+  height: 777px;
+  margin-top: -50px;
+}
+
+.product-slider button{
+  fill: black;
+  outline: none!important;
+  cursor: pointer;
+  border: none;
+  height: 47px;
+  width: 47px;
+  align-self: center;
+  background-color: rgba(42, 42, 42, 0.15);
+  padding: 0;
+}
+
+.product-slider button:hover{
+  fill: #F26376;
+}
+
+.product-description-add-cart{
+  color: #EF5B70;
+  border: 1px solid #EF5B70;
+  background-color: transparent;
+  outline: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 48px;
+  width: 211px;
+  height: 48px;
+  padding-right: 37px;
+  margin-bottom: 65px;
+  cursor: pointer;
+}
+
+.product-description-add-cart svg{
+  fill: currentColor;
+  margin-right: 22px;
+  margin-bottom: -5px;
+}
+
+.product-description-add-cart:hover{
+  color: #FFFFFF;
+  background-color: #F26376;
+}
+
+.product-description-usability{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-description-checkboxes{
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.product-description-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 571px;
+  border-bottom: 1px solid #EAEAEA;
+  margin-bottom: 50px;
+}
+
+.product-description{
+  position: relative;
+}
+
+.product-description-wrap{
+  position: relative;
+  top: -65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding-top: 65px;
+  margin-bottom: 129px;
+  outline: 1px solid #EAEAEA;
+}
+
+.product-description-tag{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-bottom: 12px;
+}
+
+.product-description-name{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+
+.product-description-text{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+
+.product-description-price{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+  padding-bottom: 65px;
+  margin: 0;
+}
+
+.product-checkbox{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.catalog-checkbox summary svg{
+  margin-right: 23px!important;
+}
+
+.product-catalog-wrap{
+  display: flex;
+  justify-content: space-between;
+  top: -65px;
+}
+
+
 
 
 
