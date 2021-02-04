@@ -40,9 +40,7 @@ h1 {
   position: relative;
 }
 .dropdown-content {
-  position: absolute;
-  margin-left: 180px;
-  margin-top: 22px;
+  position: relative;
   padding: 16px;
   width: 232px;
   height: 764px;
@@ -50,7 +48,6 @@ h1 {
   color: #222222;
   display: flex;
   flex-direction: column;
-  visibility: hidden;
 }
 .dropdown-content-tag p {
   font-style: normal;
@@ -77,20 +74,22 @@ h1 {
   color: #6F6E6E;
   margin: 0 20px;
 }
+.dropdown-content-links a:hover {
+  color: #F16D7F;
+}
 .dropdown-background {
   position: absolute;
-  margin-top: 20px;
-  margin-left: -1200px;
   height: 764px;
-  width: 1600px;
-  z-index: 0;
+  top: 75px;
+  left: 0;
+  right: 0;
   background-color: rgba(25, 23, 23, 0.7);
-  visibility: hidden;
+  justify-content: flex-end;
+  display: none;
 }
-/* Ховер для менюшки вверху - восстановить позже
-.header-menu-dropdown:hover~.dropdown-content{visibility: visible}
-.header-menu-dropdown:hover~.dropdown-background{visibility: visible}
-*/
+.dropdown-background-open {
+  display: flex;
+}
 .dropdown-content-tag {
   display: flex;
   justify-content: space-between;
@@ -671,6 +670,10 @@ summary::-webkit-details-marker {
   padding-left: 15px;
   top: -5px;
   padding-top: 19px;
+  color: #F16D7F !important;
+}
+.filter-details[open] summary {
+  color: #F16D7F;
 }
 .filter-details-categories {
   text-decoration: none;
@@ -909,6 +912,14 @@ summary::-webkit-details-marker {
   content: "";
   margin-bottom: 100px;
 }
+.bem-spaceX2 {
+  content: "";
+  margin-bottom: 40px !important;
+}
+.bem-spaceX3 {
+  content: "";
+  margin-bottom: 60px !important;
+}
 .bem-main-header__wrap {
   justify-content: space-between;
   align-items: center;
@@ -964,6 +975,15 @@ summary::-webkit-details-marker {
   line-height: 22px;
   color: #656565;
 }
+.bem-closing__menubtn_hovered {
+  fill: #F16D7F;
+}
+.bem-closing__menubtn {
+  fill: #6F6E6E;
+}
+.bem-closing__menubtn:hover {
+  fill: #F16D7F;
+}
 .bem-button {
   border: none;
   outline: none;
@@ -996,6 +1016,16 @@ summary::-webkit-details-marker {
   display: flex;
   flex-direction: column;
 }
+.bem-input {
+  width: 100%;
+  outline: 1px solid #A4A4A4;
+  border: none;
+  height: 45px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  padding: 12px 10px 15px 15px;
+}
 .bem-shipping-form {
   width: 360px;
 }
@@ -1020,7 +1050,16 @@ summary::-webkit-details-marker {
   color: #B1B1B1;
 }
 .bem-space20 {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
+}
+.bem-space30 {
+  margin-bottom: 30px !important;
+}
+.bem-space35 {
+  margin-bottom: 35px!important;
+}
+.bem-space15 {
+  margin-bottom: 15px!important;
 }
 .bem-shipping-form__input_focused {
   outline: 3px solid #F16D7F;
@@ -1109,7 +1148,7 @@ summary::-webkit-details-marker {
   color: #222222;
 }
 .bem-space75 {
-  margin-bottom: 75px;
+  margin-bottom: 75px!important;
 }
 .bem-content__cart-usabilities {
   display: flex;
@@ -1136,6 +1175,87 @@ summary::-webkit-details-marker {
 }
 .bem-space130 {
   content: "";
-  margin-bottom: 130px;
+  margin-bottom: 130px!important;
+}
+.bem-registration-form {
+  display: flex;
+  flex-direction: column;
+}
+.bem-registration {
+  width: 360px;
+}
+.bem-loyalities {
+  width: 652px;
+}
+.bem-registration__input {
+  color: #B1B1B1;
+}
+.bem-registration-form__tag {
+  margin: 0;
+  color: #222222;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+.bem-text {
+  font-style: normal;
+  font-weight: 300;
+  margin: 0;
+}
+.bem-text__notices {
+  font-style: normal;
+  font-weight: 300;
+  margin: 0;
+  color: #B1B1B1;
+  font-size: 13px;
+  line-height: 16px;
+}
+.bem-registration__button {
+  background-color: #F16D7F;
+  height: 50px;
+  width: 167px;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: normal;
+  fill: currentColor;
+}
+.bem-registration__button i {
+  margin-left: 20px;
+}
+.bem-registration__button:hover {
+  background-color: #FFFFFF;
+  outline: 1px solid #F16D7F;
+  color: #F16D7F;
+}
+.bem-registration__button_hovered {
+  background-color: #FFFFFF;
+  outline: 1px solid #F16D7F;
+  color: #F16D7F;
+}
+.bem-loyalities__tag {
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  fill: #222222;
+}
+.bem-loyalities__tag i {
+  margin-right: 22px;
+}
+.bem-radiobox {
+  font-style: normal;
+  font-weight: 300;
+  margin: 0;
+  font-size: 11px;
+  line-height: 13px;
+  color: #222222;
+}
+.bem-radiobox span {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.bem-radiobox__input {
+  vertical-align: middle;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=main.css.map */
