@@ -32,12 +32,14 @@ h1 {
 .header-search {
   width: 26px;
   height: 27px;
+  transition: 0.7s;
 }
 .header-menu {
   width: 32px;
   height: 23px;
   margin-right: 34px;
   position: relative;
+  transition: 0.7s;
 }
 .dropdown-content {
   position: relative;
@@ -101,11 +103,13 @@ h1 {
   width: 29px;
   height: 29px;
   margin-right: 34px;
+  transition: 0.7s;
 }
 .header-basket {
   position: absolute;
   width: 32px;
   height: 29px;
+  transition: 0.7s;
 }
 .basket-score {
   position: relative;
@@ -119,6 +123,8 @@ h1 {
   border-radius: 50%;
   text-align: center;
   color: #ffffff;
+  -webkit-animation: rotate 3s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite both;
+  animation: rotate 3s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite both;
 }
 .header-wrap {
   height: 100%;
@@ -268,6 +274,8 @@ h1 {
   text-align: center;
   background-color: rgba(18, 8, 8, 0.7);
   opacity: 0;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
 }
 .product-item-hover:hover {
   opacity: 1;
@@ -284,6 +292,10 @@ h1 {
   color: #FFFFFF;
   cursor: pointer;
   border: none;
+  transition: 0.2s;
+}
+.addcart:hover {
+  transform: scale(1.1);
 }
 .addcart span {
   padding: 10px;
@@ -337,6 +349,7 @@ h1 {
   color: #F26376;
   padding: 15px 40px;
   outline: 1px solid #FF6A6A;
+  transition: 0.6s;
 }
 .browse-btn a:hover {
   background-color: #F16D7F;
@@ -448,6 +461,7 @@ h1 {
   cursor: pointer;
   outline: none;
   border: none;
+  transition: 2s;
 }
 .subscribe-btn:hover {
   background-color: crimson;
@@ -487,11 +501,11 @@ h1 {
   display: inline-block;
   width: 32px;
   height: 32px;
-  outline: 1px solid black;
   text-align: center;
   line-height: 34px;
   background-color: #FFFFFF;
   color: black;
+  transition: 0.7s;
 }
 .social svg {
   fill: currentColor;
@@ -499,12 +513,13 @@ h1 {
 .socials a:hover {
   background-color: #F16D7F;
   color: #FFFFFF;
+  transform: scale(1.5);
 }
 .header-search:hover,
 .header-menu:hover,
 .header-acc:hover,
 .header-basket:hover {
-  box-shadow: 0 5px 0 #f16d7f;
+  transform: scale(1.5);
 }
 .catalog-header {
   background-color: #F8F3F4;
@@ -587,6 +602,14 @@ h1 {
   width: 360px;
   background-color: #F8F8F8;
   margin-bottom: 30px;
+  overflow: hidden;
+}
+.catalog-product img {
+  transition: 3s;
+  transition-timing-function: cubic-bezier(0.7, 0.2, 0.3, 1);
+}
+.catalog-product img:hover {
+  transform: scale(1.5) rotateY(360deg);
 }
 .catalog-product a {
   text-decoration: none;
@@ -635,6 +658,7 @@ h1 {
   font-size: 16px;
   line-height: 45px;
   color: #CFCFCF;
+  transition: 0.7s;
 }
 .catalog-pagination-btn {
   border: none;
@@ -797,6 +821,8 @@ summary::-webkit-details-marker {
   padding-right: 37px;
   margin-bottom: 65px;
   cursor: pointer;
+  transition: 2s;
+  transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .product-description-add-cart svg {
   fill: currentColor;
@@ -806,6 +832,7 @@ summary::-webkit-details-marker {
 .product-description-add-cart:hover {
   color: #FFFFFF;
   background-color: #F26376;
+  transform: rotateX(360deg);
 }
 .product-description-usability {
   display: flex;
@@ -940,6 +967,15 @@ summary::-webkit-details-marker {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+.bem-cart-image {
+  overflow: hidden;
+}
+.bem-cart-image img {
+  transition: 0.7s;
+}
+.bem-cart-image img:hover {
+  transform: scale(1.5);
 }
 .bem-cart-content__name {
   font-style: normal;
@@ -1085,6 +1121,11 @@ summary::-webkit-details-marker {
   line-height: 13px;
   color: #4A4A4A;
   margin-bottom: 60px;
+  transition: 1s;
+}
+.bem-shipping__button:hover {
+  color: #FFFFFF;
+  background-color: #F16D7F;
 }
 .bem-total-price {
   background-color: #F5F3F3;
@@ -1136,6 +1177,7 @@ summary::-webkit-details-marker {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  transition: 1s;
 }
 .bem-total-price__button:hover {
   background-color: #FFFFFF;
@@ -1164,14 +1206,17 @@ summary::-webkit-details-marker {
   font-size: 14px;
   line-height: 17px;
   color: #222222;
+  transition: 2s;
 }
 .bem-cart-usabilities__button:hover {
   outline: 1px solid #F16D7F;
   background-color: #F8F3F4;
+  transform: rotateX(360deg);
 }
 .bem-cart-usabilities__button_hovered {
   outline: 1px solid #F16D7F;
   background-color: #F8F3F4;
+  transform: rotateX(360deg);
 }
 .bem-space130 {
   content: "";
@@ -1211,6 +1256,9 @@ summary::-webkit-details-marker {
   font-size: 13px;
   line-height: 16px;
 }
+.bem-overflow_hidden {
+  overflow: hidden;
+}
 .bem-registration__button {
   background-color: #F16D7F;
   height: 50px;
@@ -1219,6 +1267,7 @@ summary::-webkit-details-marker {
   font-style: normal;
   font-weight: normal;
   fill: currentColor;
+  transition: 1s;
 }
 .bem-registration__button i {
   margin-left: 20px;
@@ -1257,5 +1306,77 @@ summary::-webkit-details-marker {
 .bem-radiobox__input {
   vertical-align: middle;
   margin-bottom: 5px;
+}
+@-moz-keyframes rotate {
+  0% {
+    -webkit-transform: rotate3d(1, 1, 0, 0deg);
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 1, 0, -180deg);
+    transform: rotate3d(1, 1, 0, -180deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 1, 0, -360deg);
+    transform: rotate3d(1, 1, 0, -360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate3d(1, 1, 0, 0deg);
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 1, 0, -180deg);
+    transform: rotate3d(1, 1, 0, -180deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 1, 0, -360deg);
+    transform: rotate3d(1, 1, 0, -360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate3d(1, 1, 0, 0deg);
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 1, 0, -180deg);
+    transform: rotate3d(1, 1, 0, -180deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 1, 0, -360deg);
+    transform: rotate3d(1, 1, 0, -360deg);
+  }
+}
+@-moz-keyframes slide {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px);
+  }
+}
+@keyframes slide {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px);
+  }
 }
 /*# sourceMappingURL=main.css.map */
