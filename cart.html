@@ -1,15 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop</title>
+  <title>Shopping cart</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <header class="header">
   <div class="wrap header-wrap">
     <div class="logo">
@@ -55,154 +54,93 @@
     </div>
   </div>
 </header>
-
-<section class="promo">
-  <div class="promo-wrap wrap">
-    <section class="promo-img"><img src="img/promoimg.jpg" width="800" alt="promoimg"></section>
-    <section class="promo-text">
-      <section class="promo-text-details">
-        <h2>THE BRAND</h2>
-        <p>OF LUXERIOUS <span id="promo-last-word">FASHION</span></p>
+<main>
+  <header class="bem-main-header bem-space">
+    <section class="wrap bem-main-header__wrap">
+      <section class="bem-main-header__tag">
+        <h1>SHOPPING CART</h1>
       </section>
     </section>
-  </div>
-</section>
+  </header>
 
-<section class="categories">
-  <div class="wrap categories-wrap">
-    <div class="cat1">
-      <p class="categories-details">30% OFF <span><br>FOR WOMEN</span></p>
-    </div>
-    <div class="cat2">
-      <p class="categories-details">HOT DEAL <span><br>FOR MEN</span></p>
-    </div>
-    <div class="cat3">
-      <p class="categories-details">NEW ARRIVALS <span><br>FOR KIDS</span></p>
-    </div>
-  </div>
-  <div class="wrap cat4">
-    <p class="cat4-details">LUXIROUS &amp; TRENDY<span><br>ACCESORIES</span></p>
-  </div>
-</section>
-
-<section class="products">
-  <div class="wrap">
-    <h2 class="products-name">Fetured Items</h2>
-    <p class="products-text">Shop for items based on what we featured in this week</p>
-    <section class="products-items">
-      <div class="product-item">
-        <div class="product-item-hover">
+  <section class="bem-content">
+    <section class="bem-content_wrap wrap bem-space130">
+      <section class="bem-content__main-cart">
+        <section class="bem-content__cart-product bem-content__cart-product-space">
+          <section class="bem-cart-image"><img src="img/cart-1.jpg" alt="product.img"></section>
+          <section class="bem-cart-content">
+            <h2 class="bem-cart-content__name">MANGO  PEOPLE  T-SHIRT</h2>
+            <p class="bem-cart-content__property">Price: <span class="bem-cart-content__property_price">$300</span></p>
+            <p class="bem-cart-content__property">Color: Red</p>
+            <p class="bem-cart-content__property">Size: Xl</p>
+            <p class="bem-cart-content__property">Quantity: <label><input type="number" min="1" value="2" class="bem-cart-content__quantity"></label></p>
+            <button class="bem-button bem-closing__cart "><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"/>
+            </svg></button>
+          </section>
+        </section>
+        <section class="bem-content__cart-product bem-space75">
+          <section class="bem-cart-image"><img src="img/cart-2.jpg" alt="product.img"></section>
+          <section class="bem-cart-content">
+            <h2 class="bem-cart-content__name">MANGO  PEOPLE  T-SHIRT</h2>
+            <p class="bem-cart-content__property">Price: <span class="bem-cart-content__property_price">$300</span></p>
+            <p class="bem-cart-content__property">Color: Red</p>
+            <p class="bem-cart-content__property">Size: Xl</p>
+            <p class="bem-cart-content__property">Quantity: <label><input type="number" min="1" value="2" class="bem-cart-content__quantity"></label></p>
+            <button class="bem-button bem-closing__cart "><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"/>
+            </svg></button>
+          </section>
+        </section>
+        <section class="bem-content__cart-usabilities">
+          <button class="bem-button bem-cart-usabilities__button">CLEAR SHOPPING CART</button>
+          <button class="bem-button bem-cart-usabilities__button">CONTINUE SHOPPING</button>
+        </section>
+      </section>
+      <section class="bem-content__cart-others">
+        <section class="bem-shipping-form">
           <form>
-            <button class="addcart" type="button"><img src="img/addcart.svg" alt="add_to_cart"><span>Add to Cart</span></button>
+            <p class="bem-shipping-form__label bem-space20">SHIPPING ADRESS</p>
+            <label><input class="bem-shipping-form__input bem-space20" type="text" placeholder="Bangladesh"></label>
+            <label><input class="bem-shipping-form__input bem-space20" type="text" placeholder="State"></label>
+            <label><input class="bem-shipping-form__input bem-space20" type="text" placeholder="Postcode / Zip"></label>
+            <input class="bem-button bem-shipping__button" type="button" value="GET A QUOTE">
           </form>
+        </section>
+        <section class="bem-total-price">
+          <p class="bem-total-price__sub">SUB TOTAL <span class="bem-total-price__sum">$900</span></p>
+          <p class="bem-total-price__grand">GRAND TOTAL <span class="bem-total-price__sum_important">$900</span></p>
+          <section class="bem-total-price__line"></section>
+          <button class="bem-button bem-total-price__button">PROCEED TO CHECKOUT</button>
+        </section>
+      </section>
+    </section>
+  </section>
+  <footer class="bem-main-footer">
+    <section class="feedback">
+      <div class="feedback-background">
+        <div class="wrap feedback-wrap">
+          <div class="recension">
+            <img src="img/Intersect%20(1).svg" alt="feedback_persone">
+            <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+          </div>
+          <div class="subscribe">
+            <h2>SUBSCRIBE</h2>
+            <p>FOR OUR NEWLETTER AND PROMOTION</p>
+            <form>
+              <label for="subscribe-form">
+                <input id="subscribe-form" type="email" placeholder="Enter Your Email">
+              </label>
+              <label>
+                <input class="subscribe-btn" type="submit" name="submit-button" value="Subscribe">
+              </label>
+            </form>
+          </div>
         </div>
-        <img class="proditem1" src="img/proditem1.jpg" alt="item1">
-        <p class="products-item-name">ELLERY X M'O CAPSULE</p>
-        <p class="products-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-        <p class="products-item-price">$52.00</p>
-      </div>
-      <div class="product-item">
-        <div class="product-item-hover">
-          <form>
-            <button class="addcart"><img src="img/addcart.svg" alt="add_to_cart"><span>Add to Cart</span></button>
-          </form>
-        </div>
-        <img class="prod-item-img-2" src="img/Layer%2051.svg" alt="item2">
-        <p class="products-item-name">ELLERY X M'O CAPSULE</p>
-        <p class="products-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-        <p class="products-item-price">$52.00</p>
-      </div>
-      <div class="product-item">
-        <div class="product-item-hover">
-          <form>
-            <button class="addcart"><img src="img/addcart.svg" alt="add_to_cart"><span>Add to Cart</span></button>
-          </form>
-        </div>
-        <img src="img/proditem3.jpg" alt="item3">
-        <p class="products-item-name">ELLERY X M'O CAPSULE</p>
-        <p class="products-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-        <p class="products-item-price">$52.00</p>
-      </div>
-      <div class="product-item">
-        <div class="product-item-hover">
-          <form>
-            <button class="addcart"><img src="img/addcart.svg" alt="add_to_cart"><span>Add to Cart</span></button>
-          </form>
-        </div>
-        <img src="img/proditem4.jpg" alt="item4">
-        <p class="products-item-name">ELLERY X M'O CAPSULE</p>
-        <p class="products-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-        <p class="products-item-price">$52.00</p>
-      </div>
-      <div class="product-item">
-        <div class="product-item-hover">
-          <form>
-            <button class="addcart"><img src="img/addcart.svg" alt="add_to_cart"><span>Add to Cart</span></button>
-          </form>
-        </div>
-        <img src="img/proditem5.jpg" alt="item5">
-        <p class="products-item-name">ELLERY X M'O CAPSULE</p>
-        <p class="products-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-        <p class="products-item-price">$52.00</p>
-      </div>
-      <div class="product-item">
-        <div class="product-item-hover">
-          <form>
-            <button class="addcart"><img src="img/addcart.svg" alt="add_to_cart"><span>Add to Cart</span></button>
-          </form>
-        </div>
-        <img src="img/proditem6.jpg" alt="item6">
-        <p class="products-item-name">ELLERY X M'O CAPSULE</p>
-        <p class="products-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-        <p class="products-item-price">$52.00</p>
       </div>
     </section>
-    <div class="browse-btn"><a href="">Browse All Product</a></div>
-  </div>
-</section>
-
-<section class="advantages">
-  <div class="wrap advantages-wrap">
-    <div class="adv adv1">
-      <img src="img/advvector1.svg" alt="advantage1">
-      <p class="adv-tag">Free Delivery</p>
-      <p class="adv-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-    </div>
-    <div class="adv adv2">
-      <img src="img/advvector2.svg" alt="advantage2">
-      <p class="adv-tag">Sales & discounts</p>
-      <p class="adv-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-    </div>
-    <div class="adv adv3">
-      <img src="img/advvecrot3.svg" alt="advantage3">
-      <p class="adv-tag">Quality assurance</p>
-      <p class="adv-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-    </div>
-  </div>
-</section>
-
-<section class="feedback">
-  <div class="feedback-background">
-    <div class="wrap feedback-wrap">
-      <div class="recension">
-        <img src="img/Intersect%20(1).svg" alt="feedback_persone">
-        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
-      </div>
-      <div class="subscribe">
-        <h2>SUBSCRIBE</h2>
-        <p>FOR OUR NEWLETTER AND PROMOTION</p>
-        <form>
-          <label for="subscribe-form">
-            <input id="subscribe-form" type="email" placeholder="Enter Your Email">
-          </label>
-          <label>
-            <input class="subscribe-btn" type="submit" name="submit-button" value="Subscribe">
-          </label>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+  </footer>
+</main>
 <footer class="footer">
   <div class="wrap footer-wrap">
     <div class="brand">
@@ -227,8 +165,8 @@
 
 
 
+
 <script src="js/main.js"></script>
 
 </body>
-
 </html>
