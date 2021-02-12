@@ -214,6 +214,7 @@ h1{
   height: 260px;
   background-repeat: no-repeat;
   background-position: center;
+  transition: 1s;
 }
 
 .cat1{
@@ -359,11 +360,6 @@ h1{
 
 .addcart img{
   margin-bottom: -5px;
-}
-
-.prod-item-img-2{
-  padding: 9px 110px 11px 108px;
-  background-color: #F7E4E2;
 }
 
 .products-item-name{
@@ -1146,7 +1142,7 @@ summary{ /*чтобы не было треугольника в firefox*/
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 75%;
+  width: 60%;
 }
 
 .bem-cart-image{
@@ -1607,7 +1603,8 @@ summary{ /*чтобы не было треугольника в firefox*/
   }
 
   .cat1, .cat2, .cat3 {
-    height: 168px;
+    height: 22vw;
+    background-size: 100% 168px;
   }
 
   .cat4{
@@ -1633,9 +1630,6 @@ summary{ /*чтобы не было треугольника в firefox*/
 
   .product-item{
     margin-bottom: 17px;
-    img{
-      width: 100%;
-    }
   }
   .browse-btn{
     margin-top: 23px;
@@ -1787,6 +1781,10 @@ summary{ /*чтобы не было треугольника в firefox*/
       }
     }
   }
+
+  .bem-cart-content{
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 770px){
@@ -1849,6 +1847,7 @@ summary{ /*чтобы не было треугольника в firefox*/
 
   .cat1, .cat2, .cat3{
     width: 100%;
+    background-size: auto;
     margin-bottom: 32px;
     height: 247px;
   }
@@ -2108,7 +2107,12 @@ summary{ /*чтобы не было треугольника в firefox*/
   .bem-loyalities{
     width: 100%;
   }
+}
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx){
+  .feedback{
+    background-image: url("../img/feedbackimg@2x.jpg");
+  }
 }
 
 

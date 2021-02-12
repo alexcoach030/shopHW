@@ -58,7 +58,12 @@
 
 <section class="promo">
   <div class="promo-wrap wrap">
-    <section class="promo-img"><img src="img/promoimg.jpg" width="800" alt="promoimg"></section>
+    <section class="promo-img">
+      <picture>
+        <source type="image/webp" srcset="img/promoimg.webp 1x, img/promoimg@2x.webp 2x">
+        <img src="img/promoimg.jpg" srcset="img/promoimg@2x.jpg 2x" width="800" alt="promoimg">
+      </picture>
+    </section>
     <section class="promo-text">
       <section class="promo-text-details">
         <h2>THE BRAND</h2>
@@ -96,7 +101,10 @@
             <button class="addcart" type="button"><img src="img/addcart.svg" alt="add_to_cart"><span>Add to Cart</span></button>
           </form>
         </div>
-        <img class="proditem1" src="img/proditem1.jpg" alt="item1">
+        <picture>
+          <source type="image/webp" srcset="img/proditem1.webp 1x, img/proditem1@2x.webp 2x">
+          <img src="img/proditem1.jpg" srcset="img/proditem1@2x.jpg 2x" alt="item1">
+        </picture>
         <p class="products-item-name">ELLERY X M'O CAPSULE</p>
         <p class="products-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
         <p class="products-item-price">$52.00</p>
@@ -107,7 +115,10 @@
             <button class="addcart"><img src="img/addcart.svg" alt="add_to_cart"><span>Add to Cart</span></button>
           </form>
         </div>
-        <img class="prod-item-img-2" src="img/Layer%2051.svg" alt="item2">
+        <picture>
+          <source type="image/webp" srcset="img/proditem2.webp 1x, img/proditem2@2x.webp 2x">
+          <img src="img/proditem2.jpg" srcset="img/proditem2@2x.jpg 2x" alt="item2">
+        </picture>
         <p class="products-item-name">ELLERY X M'O CAPSULE</p>
         <p class="products-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
         <p class="products-item-price">$52.00</p>
@@ -118,7 +129,10 @@
             <button class="addcart"><img src="img/addcart.svg" alt="add_to_cart"><span>Add to Cart</span></button>
           </form>
         </div>
-        <img src="img/proditem3.jpg" alt="item3">
+        <picture>
+          <source type="image/webp" srcset="img/proditem3.webp 1x, img/proditem3@2x.webp 2x">
+          <img src="img/proditem3.jpg" srcset="img/proditem3@2x.jpg 2x" alt="item3">
+        </picture>
         <p class="products-item-name">ELLERY X M'O CAPSULE</p>
         <p class="products-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
         <p class="products-item-price">$52.00</p>
@@ -129,7 +143,10 @@
             <button class="addcart"><img src="img/addcart.svg" alt="add_to_cart"><span>Add to Cart</span></button>
           </form>
         </div>
-        <img src="img/proditem4.jpg" alt="item4">
+        <picture>
+          <source type="image/webp" srcset="img/proditem4.webp, img/proditem4@2x.webp 2x">
+          <img src="img/proditem4.jpg" srcset="img/proditem4@2x.jpg 2x" alt="item4">
+        </picture>
         <p class="products-item-name">ELLERY X M'O CAPSULE</p>
         <p class="products-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
         <p class="products-item-price">$52.00</p>
@@ -140,7 +157,10 @@
             <button class="addcart"><img src="img/addcart.svg" alt="add_to_cart"><span>Add to Cart</span></button>
           </form>
         </div>
-        <img src="img/proditem5.jpg" alt="item5">
+        <picture>
+          <source type="image/webp" srcset="img/proditem5.webp 1x, img/proditem5@2x.webp 2x">
+          <img src="img/proditem5.jpg" srcset="img/proditem5@2x.jpg 2x" alt="item5">
+        </picture>
         <p class="products-item-name">ELLERY X M'O CAPSULE</p>
         <p class="products-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
         <p class="products-item-price">$52.00</p>
@@ -151,7 +171,10 @@
             <button class="addcart"><img src="img/addcart.svg" alt="add_to_cart"><span>Add to Cart</span></button>
           </form>
         </div>
-        <img src="img/proditem6.jpg" alt="item6">
+        <picture>
+          <source type="image/webp" srcset="img/proditem6.webp 1x, img/proditem6@2x.webp 2x">
+          <img src="img/proditem6.jpg" srcset="img/proditem6@2x.jpg 2x" alt="item6">
+        </picture>
         <p class="products-item-name">ELLERY X M'O CAPSULE</p>
         <p class="products-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
         <p class="products-item-price">$52.00</p>
@@ -196,7 +219,7 @@
             <input id="subscribe-form" type="email" placeholder="Enter Your Email">
           </label>
           <label>
-            <input class="subscribe-btn" type="submit" name="submit-button" value="Subscribe">
+            <button class="subscribe-btn" type="submit" name="submit-button">Subscribe</button>
           </label>
         </form>
       </div>
