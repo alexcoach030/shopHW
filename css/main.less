@@ -80,7 +80,7 @@ h1{
 }
 
 .account{
-  margin-right: 30px;
+  margin-right: 11px;
 }
 
 .dropdown-content-links a{
@@ -174,7 +174,7 @@ h1{
 }
 
 .promo-text-details{
-  margin: 326px 40px;
+  margin: 336px 25px 0 63px;
   padding-left: 16px;
   border-left: #f16d7f 12px solid;
   color: #222222;
@@ -184,13 +184,13 @@ h1{
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
-  margin: 0;
+  margin-bottom: -6px;
 }
 
 .promo-text-details p{
   font-style: normal;
   font-weight: 700;
-  font-size: 37px;
+  font-size: 32px;
   margin: 0;
 }
 
@@ -230,7 +230,8 @@ h1{
 }
 
 .categories-details{
-  margin-top: 105px;
+  margin-top: 94px;
+  margin-left: 19px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -256,7 +257,8 @@ h1{
 }
 
 .cat4-details{
-  padding-top: 65px;
+  padding-top: 53px;
+  margin-left: 16px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -282,7 +284,8 @@ h1{
   font-weight: normal;
   font-size: 30px;
   color: #222222;
-  margin: 3px;
+  margin-left: 10px;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -319,7 +322,7 @@ h1{
 
 .product-item-hover{
   position: absolute;
-  height: 420px;
+  height: 423px;
   width: 360px;
   display: flex;
   flex-direction: column;
@@ -333,6 +336,11 @@ h1{
 
 .product-item-hover:hover, .product-item-hover:focus, .product-item-hover:active{
   opacity: 1;
+  z-index: 100;
+  }
+
+.product-item-hover:hover~.bem-catalog-product img{
+  transform: scale(1.5);
 }
 
 
@@ -368,8 +376,9 @@ h1{
   font-weight: 700;
   font-size: 13px;
   color: #000000;
-  padding-left: 18px;
+  padding-left: 21px;
   padding-right: 28px;
+  margin-top: 23px;
 }
 
 .products-item-text{
@@ -378,7 +387,7 @@ h1{
   font-weight: 300;
   font-size: 14px;
   color: #9F9F9F;
-  padding-left: 18px;
+  padding-left: 20px;
   padding-right: 28px;
   overflow: hidden;
 }
@@ -389,13 +398,14 @@ h1{
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
-  padding-left: 18px;
+  padding-left: 22px;
   padding-right: 28px;
 }
 
 .browse-btn{
-  margin-top: 48px;
+  margin-top: 34px;
   text-align: center;
+  margin-left: 10px;
 
 }
 
@@ -427,13 +437,13 @@ h1{
 
 .advantages-wrap{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
-  padding-top: 103px;
+  padding-top: 99px;
 }
 
 .adv1 img{
-  margin-bottom: 8px;
+  margin: 1px 0 7px 10px;
 }
 
 .adv3 img{
@@ -447,6 +457,7 @@ h1{
   font-size: 20px;
   line-height: 24px;
   color: #FBFBFB;
+  margin-bottom: 16px;
 }
 
 .adv-text{
@@ -456,7 +467,7 @@ h1{
   line-height: 17px;
   text-align: center;
   color: #9F9F9F;
-  padding: 0 18px;
+  padding: 0 22px;
   margin-bottom: 104px;
 }
 
@@ -483,8 +494,12 @@ h1{
 }
 
 .recension{
-  width: 30%;
-  margin-top: 87px;
+  width: 32%;
+  margin-top: 100px;
+  img{
+    margin-bottom: 5px;
+    margin-left: -17px;
+  }
 }
 
 .recension p{
@@ -499,7 +514,9 @@ h1{
 
 .subscribe{
   width: 50%;
-  margin-top: 110px;
+  margin-top: 132px;
+  padding-left: 16px;
+  margin-bottom: -8px;
 }
 
 .subscribe h2{
@@ -509,7 +526,7 @@ h1{
   line-height: 167.2%;
   text-align: center;
   color: #222224;
-  margin-bottom: 0;
+  margin-bottom: -10px;
 }
 
 #subscribe-form{
@@ -576,10 +593,14 @@ h1{
   line-height: 19px;
   color: #FBFBFB;
   margin-top: 30px;
+  padding-left: 9px;
 }
 
 .brand p{
   margin: 0;
+  span{
+    margin-left: 9px;
+  }
 }
 
 .socials{
@@ -720,9 +741,6 @@ h1{
   img{
     transition: 3s;
     transition-timing-function: cubic-bezier(0.7,0.2,0.3,1);
-    &:hover{
-      transform: scale(1.5) rotateY(360deg);
-    }
   }
 }
 
@@ -1644,6 +1662,7 @@ summary{ /*чтобы не было треугольника в firefox*/
       }
     }
   }
+
   .browse-btn{
     margin-top: 23px;
   }
