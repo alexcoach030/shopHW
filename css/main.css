@@ -1466,7 +1466,7 @@ summary {
   }
   .feedback {
     height: 693px;
-    background-image: url("../img/bgisub-tablet.jpg");
+    background-image: url("../img/feedbackimg-tablet.jpg");
   }
   .feedback-background {
     height: 693px;
@@ -1826,10 +1826,8 @@ summary {
   .bem-loyalities {
     width: 100%;
   }
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .feedback {
-    background-image: url("../img/feedbackimg@2x.jpg");
+    background-image: url("../img/feedbackimg-phone.jpg");
   }
 }
 /*# sourceMappingURL=main.css.map */
