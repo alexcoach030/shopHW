@@ -287,6 +287,9 @@ h1 {
 .product-item-hover:active {
   opacity: 1;
 }
+.product-item-hover:hover .addcart {
+  display: inline-block;
+}
 .addcart {
   background-color: transparent;
   outline: 1px solid #FFFFFF;
@@ -300,6 +303,7 @@ h1 {
   cursor: pointer;
   border: none;
   transition: 0.2s;
+  display: none;
 }
 .addcart:hover {
   transform: scale(1.1);
