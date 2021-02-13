@@ -282,13 +282,17 @@ h1 {
   transition: 1s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
 }
+.product-item-hover .addcart {
+  visibility: hidden;
+}
 .product-item-hover:hover,
 .product-item-hover:focus,
 .product-item-hover:active {
   opacity: 1;
 }
 .product-item-hover:hover .addcart {
-  display: inline-block;
+  visibility: visible;
+  transition-delay: 0.1s !important;
 }
 .addcart {
   background-color: transparent;
@@ -303,7 +307,6 @@ h1 {
   cursor: pointer;
   border: none;
   transition: 0.2s;
-  display: none;
 }
 .addcart:hover {
   transform: scale(1.1);
