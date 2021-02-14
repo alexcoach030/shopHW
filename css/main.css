@@ -1,9 +1,20 @@
 * {
   box-sizing: border-box;
 }
+html {
+  min-height: 100vh;
+}
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
 }
 button {
   font-family: 'Lato', sans-serif;
@@ -36,9 +47,12 @@ h1 {
 .header-menu {
   width: 32px;
   height: 23px;
-  margin-right: 21px;
+  margin-right: 29px;
   position: relative;
   transition: 0.7s;
+}
+.catalog-feedback {
+  margin: 0!important;
 }
 .dropdown-content {
   position: relative;
@@ -65,7 +79,8 @@ h1 {
   color: #F16D7F;
 }
 .account {
-  margin-right: 18px;
+  margin-right: 20px;
+  margin-top: 12px;
 }
 .dropdown-content-links a {
   font-style: normal;
@@ -102,7 +117,7 @@ h1 {
 .header-acc {
   width: 29px;
   height: 29px;
-  margin-right: 39px;
+  margin-right: 30px;
   transition: 0.7s;
 }
 .header-basket {
@@ -199,6 +214,8 @@ h1 {
   font-size: 16px;
   line-height: 29px;
   color: #FFFFFF;
+  height: 50%;
+  overflow: hidden;
 }
 .categories-details span {
   font-size: 24px;
@@ -223,6 +240,8 @@ h1 {
   font-size: 16px;
   line-height: 29px;
   color: #FFFFFF;
+  height: 100%;
+  overflow: hidden;
 }
 .cat4-details span {
   font-size: 24px;
@@ -325,6 +344,9 @@ h1 {
   padding-left: 21px;
   padding-right: 28px;
   margin-top: 23px;
+  height: 3%;
+  width: 90%;
+  overflow: hidden;
 }
 .products-item-text {
   height: 50px;
@@ -435,6 +457,8 @@ h1 {
   line-height: 24px;
   text-align: center;
   color: #222224;
+  overflow: hidden;
+  height: 20%;
 }
 .subscribe {
   width: 50%;
@@ -460,6 +484,7 @@ h1 {
   width: 285px;
   height: 50px;
   padding-left: 22px;
+  padding-right: 25px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   outline: none;
@@ -493,6 +518,8 @@ h1 {
   text-align: center;
   color: #222224;
   margin-top: 0;
+  overflow: hidden;
+  height: 20%;
 }
 .footer {
   background-color: #222224;
@@ -650,6 +677,8 @@ h1 {
   line-height: 16px;
   color: #000000;
   margin: 24px 0 12px 0;
+  height: 3%;
+  overflow: hidden;
 }
 .catalog-product-text {
   font-style: normal;
@@ -956,7 +985,7 @@ summary {
   margin-left: -8px;
 }
 .product-footer {
-  margin-top: 92px;
+  margin-top: 98px;
 }
 .catalog-checkbox summary svg {
   margin-right: 23px!important;
@@ -966,12 +995,19 @@ summary {
   justify-content: space-between;
   top: -65px;
 }
+.product-link {
+  text-decoration: none;
+}
 .bem-content {
   margin: 0;
   padding: 0;
 }
+.bem-content__registration {
+  padding-top: 6px;
+  padding-left: 5px;
+}
 .bem-content_wrap {
-  margin-bottom: 96px;
+  margin-bottom: 92px;
   display: flex;
   justify-content: space-between;
 }
@@ -983,7 +1019,7 @@ summary {
 }
 .bem-main-header {
   background-color: #F8F3F4;
-  height: 150px;
+  height: 147px;
 }
 .bem-space {
   content: "";
@@ -1006,6 +1042,7 @@ summary {
   margin-bottom: 60px;
 }
 .bem-main-header__tag {
+  margin-left: -3px;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
@@ -1013,7 +1050,7 @@ summary {
   color: #F16D7F;
 }
 .bem-cart-content {
-  padding: 22px 30px;
+  padding: 22px 34px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1034,7 +1071,7 @@ summary {
   font-size: 24px;
   line-height: 29px;
   color: #222222;
-  width: 262px;
+  width: 210px;
   margin-bottom: 40px;
   margin-top: 0;
 }
@@ -1102,6 +1139,7 @@ summary {
 .bem-content__cart-others {
   display: flex;
   flex-direction: column;
+  padding-top: 16px;
 }
 .bem-input {
   width: 100%;
@@ -1115,6 +1153,7 @@ summary {
 }
 .bem-shipping-form {
   width: 360px;
+  padding-left: 5px;
 }
 .bem-shipping-form__input {
   width: 100%;
@@ -1182,7 +1221,7 @@ summary {
   background-color: #F5F3F3;
   width: 360px;
   height: 214px;
-  padding: 40px 34px;
+  padding: 36px 37px;
   text-align: center;
 }
 .bem-total-price__sub {
@@ -1240,8 +1279,8 @@ summary {
   outline: 1px solid #F16D7F;
   color: #222222;
 }
-.bem-space75 {
-  margin-bottom: 75px!important;
+.bem-space70 {
+  margin-bottom: 70px!important;
 }
 .bem-content__cart-usabilities {
   display: flex;
@@ -1249,7 +1288,7 @@ summary {
 }
 .bem-cart-usabilities__button {
   background-color: #FFFFFF;
-  width: 225px;
+  width: 235px;
   height: 50px;
   outline: 1px solid #A4A4A4;
   font-style: normal;
@@ -1279,6 +1318,7 @@ summary {
 }
 .bem-registration {
   width: 360px;
+  padding-left: 6px;
 }
 .bem-loyalities {
   width: 652px;
@@ -1629,13 +1669,14 @@ summary {
   }
   .bem-content_wrap .bem-content__cart-others {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: -8px;
   }
   .bem-content_wrap .bem-content__cart-others .bem-shipping-form {
-    width: 47%;
+    width: 49%;
   }
   .bem-content_wrap .bem-content__cart-others .bem-total-price {
-    width: 47%;
+    width: 49%;
     margin-top: 37px;
   }
   .bem-content__cart-product {
@@ -1644,9 +1685,10 @@ summary {
   }
   .bem-content__cart-usabilities {
     justify-content: center;
+    margin-top: -9px;
   }
   .bem-content__cart-usabilities .bem-cart-usabilities__button {
-    margin: 0 25px 64px 25px;
+    margin: 0 25px 48px 25px;
   }
   .bem-content__registration {
     display: flex!important;
@@ -1662,7 +1704,7 @@ summary {
     width: 48%;
   }
   .bem-loyalities {
-    width: 50%;
+    width: 47%;
   }
   .bem-loyalities i {
     margin: 0;
@@ -1678,15 +1720,18 @@ summary {
   .bem-cart-content {
     width: 75%;
   }
-}
-.product-description-content {
-  margin-top: -10px;
-}
-.product-description-price {
-  margin: -5px 0 0 -4px;
-}
-.product-footer {
-  margin-top: -16px;
+  .product-description-content {
+    margin-top: -10px;
+  }
+  .product-description-price {
+    margin: -5px 0 0 -4px;
+  }
+  .product-footer {
+    margin-top: -16px;
+  }
+  .bem-content .bem-space130 {
+    margin-bottom: 73px!important;
+  }
 }
 @media screen and (max-width: 770px) {
   .wrap {
@@ -1700,6 +1745,13 @@ summary {
   }
   .basket-score {
     display: none;
+  }
+  .bem-main-header__tag {
+    margin-left: 17px;
+    margin-top: -19px;
+  }
+  .bem-content__cart-product-space {
+    margin-bottom: 30px;
   }
   .header-menu {
     margin-right: 0;
@@ -1914,6 +1966,16 @@ summary {
     flex-direction: column;
     align-items: center;
   }
+  .bem-content__main-cart .bem-space70 {
+    margin-bottom: 40px!important;
+  }
+  .bem-shipping-form {
+    padding-left: 10px;
+  }
+  .bem-shipping__button {
+    margin-top: 4px;
+    font-size: 9px;
+  }
   .bem-content__cart-product {
     height: 188px;
   }
@@ -1955,8 +2017,8 @@ summary {
     width: 10px;
     height: 10px;
   }
-  .bem-space130 {
-    margin-bottom: 96px;
+  .bem-content .bem-space130 {
+    margin-bottom: 90px!important;
   }
   .bem-content_wrap .bem-content__cart-others {
     flex-direction: column;
@@ -1966,7 +2028,7 @@ summary {
     width: 100%;
   }
   .bem-content_wrap .bem-content__cart-others .bem-total-price {
-    margin-top: 49px;
+    margin-top: -10px;
     width: 100%;
   }
   .bem-content__cart-usabilities {
@@ -1975,20 +2037,28 @@ summary {
   }
   .bem-content__cart-usabilities .bem-cart-usabilities__button {
     width: 45%;
-    margin: 0 0 64px 0;
-    font-size: 12px;
+    margin: 0 0 33px 0;
+    height: 33px;
+    font-size: 10px;
     line-height: 14px;
   }
   .bem-content__registration {
     flex-direction: column!important;
     align-items: center!important;
+    margin-top: -20px;
+    margin-left: -10px;
   }
   .bem-registration {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
+  }
+  .reg-page {
+    margin-left: 0;
+    margin-top: 0;
   }
   .bem-loyalities {
     width: 100%;
+    padding-left: 12px;
   }
   .feedback {
     background-image: url("../img/feedbackimg-phone.jpg");
